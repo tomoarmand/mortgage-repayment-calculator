@@ -1,0 +1,339 @@
+@font-face {
+    font-family: WorkSans;
+    src: url(assets/fonts/PlusJakartaSans-VariableFont_wght.ttf);
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: WorkSans;
+    background-color: hsl(202, 86%, 94%)
+}
+
+.container {
+    width: 700px;
+    border: 1px solid black;
+    display: flex;
+    box-sizing: border-box;
+    border-radius: 20px;
+    height:440px;
+    border: none;
+    background-color: white;
+}
+
+.left {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 25px;
+    box-sizing: border-box;
+    border-radius: 20px 0px 20px 20px;
+}
+
+.headclear {
+    font-weight:600;
+    color: hsl(202, 55%, 16%);
+    display: flex;
+    justify-content: space-between;
+    margin-top:5px;
+    margin-bottom:10px;
+}
+
+.clear {
+    border: none;
+    background: none;
+    text-decoration: underline;
+    color:hsl(200, 24%, 40%)
+}
+
+.termrate {
+    display: flex;
+    justify-content: space-between;
+    gap:8px
+}
+
+.amountwrap {
+    font-size: 0.8em;
+    color:hsl(200, 24%, 40%);
+    display: flex;
+    flex-direction: column;
+}
+
+.amount {
+    height: 30px;
+    border: 1px solid hsl(200, 24%, 40%);
+    border-radius: 0 5px 5px 0;
+    width: 100%;
+    border: none;
+}
+
+.mortgagewrap {
+    font-size: 0.8em;
+    color: hsl(200, 24%, 40%);
+    display: flex;
+    flex-direction: column
+}
+
+.mortgagewrap, .interestwrap {
+    flex: 1;
+}
+
+.input-pound {
+    display:flex;
+    align-items: center;
+    border: 1px solid hsl(200, 24%, 40%);;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.pound-symbol {
+    width:32px;
+    background-color: hsl(202, 86%, 94%);
+    height:100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px 0px 0px 5px;
+    font-weight: 700;
+    
+}
+
+.input-years {
+    display:flex;
+    align-items: center;
+    border: 1px solid hsl(200, 24%, 40%);;
+    border-radius: 5px;
+    margin-top: 10px;
+
+}
+
+.years-symbol {
+    width: 80px;
+    background-color: hsl(202, 86%, 94%);
+    height:100%;
+    border-radius: 0 5px 5px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+}
+
+.years {
+    height: 30px;
+    border: none;
+    border-radius:5px 0 0 5px;
+    width:92%;
+
+}
+
+
+.interestwrap {
+    font-size: 0.8em;
+    color: hsl(200, 24%, 40%);
+    display: flex;
+    flex-direction: column;
+    align-self: flex-end;
+}
+
+.input-percent {
+    display:flex;
+    align-items: center;
+    border: 1px solid hsl(200, 24%, 40%);;
+    border-radius: 5px;
+    margin-top: 10px;
+    height: 32px;
+}
+
+.percent-symbol {
+    width: 40px;
+    background-color: hsl(202, 86%, 94%);
+    height:100%;
+    border-radius: 0 5px 5px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+}
+
+
+.rate {
+    height: 30px;
+    border: none;
+    border-radius: 5px;
+    width:96%;
+}
+
+.typewrap {
+    font-size: 0.8em;
+    color: hsl(200, 24%, 40%);
+    display: flex;
+    flex-direction: column;
+    gap: 9px
+}
+
+.repaymentradio, .interestradio  {
+    display: flex;
+    align-items: center;
+    height: 35px;
+    border: 1px solid hsl(200, 24%, 40%);
+    border-radius: 5px;
+    background: none;
+    box-sizing: border-box;
+    gap: 11px;
+    color: hsl(202, 55%, 16%);
+    font-weight: 600;
+    padding-left: 12px;
+}
+
+/* .selectedradio {
+    display: none;
+    align-items: center;
+    height: 35px;
+    border: 1px solid hsl(61, 70%, 52%);
+    border-radius: 5px;
+    background: hsla(61, 70%, 52%, 0.275);
+    box-sizing: border-box;
+    gap: 11px;
+    color: hsl(202, 55%, 16%);
+    font-weight: 600;
+    padding-left: 12px;
+} */
+
+.type {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 0px;
+    accent-color: hsl(61, 70%, 52%);
+}
+
+
+.calculate {
+    height:40px;
+    width: 76%;
+    background-color: hsl(61, 70%, 52%);
+    border: none;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    color: hsl(202, 55%, 16%);
+    gap: 10px;
+    margin-top:7px
+}
+
+.right {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 28px;
+    box-sizing: border-box;
+    border-radius: 0px 20px 20px 50px;
+    background-color: hsl(197, 62%, 24%)
+}
+
+.emptyimg {
+    height: 130px
+}
+
+.resultsshown {
+    font-weight: 600;
+    color: white;
+    padding-bottom: 15px
+}
+
+.resultscontent {
+    color:hsl(203, 41%, 72%);
+    font-size: 0.7em;
+    text-align: center;
+}
+
+
+/* Hidden when form is empty */
+.complete {
+    display: none;
+    flex-direction: column;
+
+}
+
+.placeholder {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+}
+
+.resultheading {
+    color: white;
+    margin-bottom:20px;
+}
+
+.explanation {
+    color: hsl(202, 86%, 94%);
+    font-size: 0.7em;
+    margin-bottom: 33px;
+}
+
+.totals {
+    box-sizing: border-box;
+    padding: 20px;
+    height: 220px;
+    width: 100%;
+    border: none;
+    border-radius: 7px;
+    background-color: hsl(202, 55%, 16%)
+}
+
+.greenbacking {
+    background-color: hsl(61, 70%, 52%);
+    border-radius: 7px;
+    height: 223px;
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.permonth {
+    display: flex;
+    flex-direction: column;
+    font-size: 0.8em;
+    color: hsl(202, 86%, 94%);
+    padding-bottom: 20px;
+    border-bottom: 1px solid hsl(200, 24%, 40%);
+}
+
+.monthly {
+    color: hsl(61, 70%, 52%);
+    font-size: 40px;
+    font-weight: 600;
+    margin-top: 12px
+}
+
+.perterm {
+    display: flex;
+    flex-direction: column;
+    color: hsl(202, 86%, 94%);
+    font-size: 0.8em;
+    margin-top: 25px;
+}
+
+.overterm {
+    color:white;
+    font-size: 1.4em;
+    font-weight: 600;
+    margin-top: 7px;
+}
+
+
+
+
+

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="index.css">
+  <title>Frontend Mentor | Mortgage repayment calculator</title>
+
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="left">
+      <div class="headclear">
+        Mortgage Calculator
+        <button class="clear" id="clear">
+          Clear All
+        </button>
+      </div>
+      <div class="amountwrap">
+        Mortgage Amount
+        <div class="input-pound">
+          <div class="pound-symbol">&pound</div>
+        <input class="amount" id="amountfield">
+      </div>
+      </div>
+      <div class="termrate">
+        <div class="mortgagewrap">
+          Mortgage Term
+          <div class="input-years">
+          <input class="years" id="yearsfield">
+          <div class="years-symbol">years</div>
+        </div>
+        </div>
+        <div class="interestwrap">
+          Interest Rate
+          <div class="input-percent">
+          <input class="rate" id="ratefield">
+          <div class="percent-symbol">%</div>
+        </div>
+      </div>
+      </div>
+      <div class="typewrap">
+        Mortgage Type
+        <div class="repaymentradio selectedradio"><input type="radio" name="type" class="type" id="repayment">
+          Repayment</div>
+        <div class="interestradio selectedradio"><input type="radio" name="type" class="type" id="interest">
+          Interest Only</div>
+      </div>
+      <button class="calculate" id="calculate">
+        <img src="icon-calculator.svg">
+        Calculate Repayments
+      </button>
+    </div>
+    <div class="right">
+      <div class="complete">
+        <div class="resultheading">
+          Your results
+        </div>
+        <div class="explanation">
+          Your results are shown below based on the information you provided.
+          To adjust the results, edit the form and click “calculate repayments” again.
+        </div>
+        <div class="greenbacking">
+        <div class="totals">
+          <div class="permonth">
+            Your monthly repayments
+            <div class="monthly">
+            </div>
+          </div>
+          <div class="perterm">
+            Total you'll pay over the term
+            <div class="overterm">
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+      <div class="placeholder">
+        <img src="illustration-empty.svg" class="emptyimg">
+        <div class="resultsshown">
+          Results shown here
+        </div>
+        <div class="resultscontent">
+          Complete the form and click "calculate repayments" to see what your monthly repayments would be.
+        </div>
+      </div>
+    </div>
+
+
+
+    <script src="index.js"></script>
+</body>
+
+</html>
